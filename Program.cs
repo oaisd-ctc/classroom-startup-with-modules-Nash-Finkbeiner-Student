@@ -7,7 +7,9 @@ public class Program
          FindSeat();
          SignIn();
          DailyLogic();
-         BoxBreathing(5);
+         Console.WriteLine("How many seconds do you breathe for?");
+         int breath = int.Parse(Console.ReadLine());
+         BoxBreathing(breath);
          DailyHypothetical();
     }
 
